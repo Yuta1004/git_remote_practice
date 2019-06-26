@@ -1,9 +1,9 @@
-from addition import addition
-from subtraction import subtraction
-from multiplication import multiplication
-from division import division
-from gen_str import gen_str
-from gen_list import gen_list
+from functions.addition import addition
+from functions.subtraction import subtraction
+from functions.multiplication import multiplication
+from functions.division import division
+from functions.gen_str import gen_str
+from functions.gen_list import gen_list
 from testfunc import test, test_equal, test_not_equal, TestFailedException
 
 

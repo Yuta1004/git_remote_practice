@@ -4,6 +4,7 @@ from functions.multiplication import multiplication
 from functions.division import division
 from functions.gen_str import gen_str
 from functions.gen_list import gen_list
+from functions.judge_value import judge_value
 from testfunc import test, test_equal, test_not_equal, TestFailedException
 
 
@@ -25,6 +26,9 @@ def main():
 
     gen_list_result = gen_list(1, 5)
     test_equal("Generate List", gen_list_result, [1, 1, 1, 1, 1])
+
+    judge_result = judge_value(10, 20)
+    test("Judge Value", not judge_result)
 
 
 if __name__ == '__main__':

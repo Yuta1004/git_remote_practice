@@ -1,4 +1,4 @@
-class TestFailedError(Exception):
+class TestFailedException(Exception):
     pass
 
 

@@ -1,8 +1,10 @@
-from addition import *
-from subtraction import *
-from multiplication import *
-from division import *
-from testfunc import *
+from addition import addition
+from subtraction import subtraction
+from multiplication import multiplication
+from division import division
+from gen_str import gen_str
+from gen_list import gen_list
+from testfunc import test, test_equal, test_not_equal, TestFailedException
 
 
 def main():
@@ -17,6 +19,12 @@ def main():
 
     div_result = division(60, 2)
     test_equal("Division", 30)
+
+    gen_str_result = gen_str("Hello", "World!")
+    test_equal("Generate Str", gen_str_result, "HelloWorld!")
+
+    gen_list_result = gen_list(1, 5)
+    test_equal("Generate List", gen_list_result, [1, 1, 1, 1, 1])
 
 
 if __name__ == '__main__':

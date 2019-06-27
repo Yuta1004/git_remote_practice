@@ -1,0 +1,4 @@
+def gen_str(a,b):
+  print(a + b)
+
+gen_str(Hello,World)

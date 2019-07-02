@@ -16,10 +16,10 @@ def main():
     test_equal("Subbtraction", sub_result, 40)
 
     mul_result = multiplication(40, 50)
-    test_equal("Multiplication", 2000)
+    test_equal("Multiplication", mul_result, 2000)
 
     div_result = division(60, 2)
-    test_equal("Division", 30)
+    test_equal("Division", div_result, 30)
 
     gen_str_result = gen_str("Hello", "World!")
     test_equal("Generate Str", gen_str_result, "HelloWorld!")
